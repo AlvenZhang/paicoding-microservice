@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/senstive/SensitiveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/senstive/SensitiveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/ConfigRefreshEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/ConfigRefreshEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/DynamicConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/DynamicConfigContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DruidCheckUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DruidCheckUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/SqlStateInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/SqlStateInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-article/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-article/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -160,9 +156,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
+        <item itemvalue="Spring Boot.PaicodingArticleApplication" />
+        <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingArticleApplication" />
-        <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +178,15 @@
       <workItem from="1736647252407" duration="5507000" />
       <workItem from="1736652775989" duration="28359000" />
     </task>
+    <task id="LOCAL-00001" summary="拆除paicoding-core中关于自动加载配置相关的信息。全部模块可以正常运行">
+      <option name="closed" value="true" />
+      <created>1737332882356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737332882356</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +222,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java</url>
-          <line>18</line>
+          <line>22</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

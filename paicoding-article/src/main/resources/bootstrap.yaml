@@ -1,6 +1,6 @@
 spring:
   application:
-    name: paicoding-user # 服务名称
+    name: paicoding-article # 服务名称
   profiles:
     active: local
   cloud:
