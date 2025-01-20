@@ -23,6 +23,12 @@
             <groupId>com.github.paicoding</groupId>
             <artifactId>paicoding-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--统一配置管理-->
         <dependency>

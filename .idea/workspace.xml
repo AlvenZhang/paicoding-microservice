@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-article/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-article/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +77,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.35287356",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "5de9c4a9b68fc791bc32b6a79b18e32e",
+    "spring.configuration.checksum": "c73ebd656ee0941c6f6d84ed36f71f0b",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -101,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaicodingGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.PaicodingUserApplication">
     <configuration name="PaicodingArticleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="paicoding-article" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.paicoding.PaicodingArticleApplication" />
@@ -156,9 +162,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
         <item itemvalue="Spring Boot.PaicodingArticleApplication" />
-        <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingArticleApplication" />
       </list>
@@ -177,6 +183,7 @@
       <workItem from="1735971739243" duration="10968000" />
       <workItem from="1736647252407" duration="5507000" />
       <workItem from="1736652775989" duration="28359000" />
+      <workItem from="1737377983696" duration="3865000" />
     </task>
     <task id="LOCAL-00001" summary="拆除paicoding-core中关于自动加载配置相关的信息。全部模块可以正常运行">
       <option name="closed" value="true" />
@@ -210,11 +217,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/UserRestController.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/UserRestController.java</url>
           <line>127</line>
