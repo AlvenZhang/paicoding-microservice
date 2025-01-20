@@ -5,7 +5,7 @@ import com.github.houbb.sensitive.word.api.IWordDeny;
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
 import com.github.houbb.sensitive.word.support.allow.WordAllowSystem;
 import com.github.houbb.sensitive.word.support.deny.WordDenySystem;
-import com.github.paicoding.forum.core.autoconf.DynamicConfigContainer;
+//import com.github.paicoding.forum.core.autoconf.DynamicConfigContainer;
 import com.github.paicoding.forum.core.cache.RedisClient;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.BooleanUtils;
@@ -34,29 +34,29 @@ public class SensitiveService {
     private volatile SensitiveWordBs sensitiveWordBs;
     @Autowired
     private SensitiveProperty sensitiveConfig;
-    @Autowired
-    private DynamicConfigContainer dynamicConfigContainer;
+//    @Autowired
+//    private DynamicConfigContainer dynamicConfigContainer;
 
-    @PostConstruct
-    public void refresh() {
-        dynamicConfigContainer.registerRefreshCallback(sensitiveConfig, this::refresh);
-        IWordDeny deny = () -> {
-            List<String> sub = WordDenySystem.getInstance().deny();
-            sub.addAll(sensitiveConfig.getDeny());
-            return sub;
-        };
-
-        IWordAllow allow = () -> {
-            List<String> sub = WordAllowSystem.getInstance().allow();
-            sub.addAll(sensitiveConfig.getAllow());
-            return sub;
-        };
-        sensitiveWordBs = SensitiveWordBs.newInstance()
-                .wordDeny(deny)
-                .wordAllow(allow)
-                .init();
-        log.info("敏感词初始化完成!");
-    }
+//    @PostConstruct
+//    public void refresh() {
+//        dynamicConfigContainer.registerRefreshCallback(sensitiveConfig, this::refresh);
+//        IWordDeny deny = () -> {
+//            List<String> sub = WordDenySystem.getInstance().deny();
+//            sub.addAll(sensitiveConfig.getDeny());
+//            return sub;
+//        };
+//
+//        IWordAllow allow = () -> {
+//            List<String> sub = WordAllowSystem.getInstance().allow();
+//            sub.addAll(sensitiveConfig.getAllow());
+//            return sub;
+//        };
+//        sensitiveWordBs = SensitiveWordBs.newInstance()
+//                .wordDeny(deny)
+//                .wordAllow(allow)
+//                .init();
+//        log.info("敏感词初始化完成!");
+//    }
 
     /**
      * 判断是否包含敏感词

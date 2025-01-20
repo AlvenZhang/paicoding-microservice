@@ -42,7 +42,7 @@
         <opencv.version>4.6.0-0</opencv.version>
         <sensitive.version>0.8.0</sensitive.version>
         <jwt.version>4.4.0</jwt.version>
-        <mysql.version>8.0.23</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
 
 
         <spring-cloud.version>2021.0.3</spring-cloud.version>

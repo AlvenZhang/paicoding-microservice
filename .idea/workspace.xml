@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="" />
+    <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="First commit">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/senstive/SensitiveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/senstive/SensitiveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/ConfigRefreshEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/ConfigRefreshEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/DynamicConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/autoconf/DynamicConfigContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DruidCheckUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/DruidCheckUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/SqlStateInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/SqlStateInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "xifeng",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "D:/ideafile/paicoding-microservice",
     "node.js.detected.package.eslint": "true",
@@ -61,7 +74,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.35287356",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "5de9c4a9b68fc791bc32b6a79b18e32e",
     "vue.rearranger.settings.migration": "true"
   }
@@ -147,9 +160,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
-        <item itemvalue="Spring Boot.PaicodingArticleApplication" />
         <item itemvalue="Spring Boot.PaicodingUserApplication" />
+        <item itemvalue="Spring Boot.PaicodingArticleApplication" />
+        <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +184,21 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
