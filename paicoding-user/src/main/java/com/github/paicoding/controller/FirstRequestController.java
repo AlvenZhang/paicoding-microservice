@@ -1,6 +1,7 @@
 package com.github.paicoding.controller;
 
 
+import com.github.paicoding.client.ArticleClient;
 import com.github.paicoding.client.GatewayClient;
 import com.github.paicoding.client.OriginClient;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserStatisticInfoDTO;
@@ -19,6 +20,14 @@ public class FirstRequestController {
 
     @Autowired
     private GatewayClient gatewayClient;
+
+    @Autowired
+    private ArticleClient articleClientReal;
+
+    @RequestMapping("/interceptor/test")
+    public String interceptorTest(){
+        return articleClientReal.test1();
+    }
 
     @RequestMapping("/sayHello")
     public String sayHello(){

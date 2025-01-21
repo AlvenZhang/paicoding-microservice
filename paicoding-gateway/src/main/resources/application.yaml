@@ -16,6 +16,10 @@ spring:
           uri: lb://paicoding-origin
           predicates:
             - Path=/article/**,/rest/**
+        - id: article
+          uri: lb://paicoding-article
+          predicates:
+            - Path=/temptest/**
 
 #  datasource: #单数据源
 #    url: jdbc:mysql://192.168.56.102:3306/${database.name}?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai

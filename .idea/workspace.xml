@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="添加用户上下文拦截器">
+      <change afterPath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/controller/TempController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/feign/FeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/client/ArticleClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paicoding-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/FirstRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/FirstRequestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.35287356",
@@ -183,7 +184,7 @@
       <workItem from="1735971739243" duration="10968000" />
       <workItem from="1736647252407" duration="5507000" />
       <workItem from="1736652775989" duration="28359000" />
-      <workItem from="1737377983696" duration="3865000" />
+      <workItem from="1737377983696" duration="6687000" />
     </task>
     <task id="LOCAL-00001" summary="拆除paicoding-core中关于自动加载配置相关的信息。全部模块可以正常运行">
       <option name="closed" value="true" />
@@ -193,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737332882356</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加用户上下文拦截器">
+      <option name="closed" value="true" />
+      <created>1737384274578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737384274578</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,20 +221,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="添加用户上下文拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加用户上下文拦截器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/UserRestController.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/feign/FeignConfig.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
