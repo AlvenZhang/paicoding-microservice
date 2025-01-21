@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="添加用户上下文拦截器">
-      <change afterPath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/controller/TempController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/feign/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/client/ArticleClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/FirstRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/FirstRequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-api/src/main/java/com/github/paicoding/forum/api/model/context/ReqInfoContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/ws/WebSocketResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/ws/WebSocketResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/converter/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/converter/UserConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/global/ForumExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/global/ForumExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/global/GlobalInitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/global/GlobalInitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/UserAiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/UserAiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/UserRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/UserRelationServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,31 +57,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "xifeng",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/ideafile/paicoding-microservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.35287356",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "c73ebd656ee0941c6f6d84ed36f71f0b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;xifeng&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ideafile/paicoding-microservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.35287356&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c73ebd656ee0941c6f6d84ed36f71f0b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -135,13 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaicodingUserApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="paicoding-user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.paicoding.PaicodingUserApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PaicodingUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="paicoding-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.paicoding.PaicodingUserApplication" />
@@ -156,7 +149,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.PaicodingUserApplication (1)" />
       <item itemvalue="Spring Boot.PaicodingArticleApplication" />
       <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
       <item itemvalue="Spring Boot.PaicodingUserApplication" />
@@ -164,8 +156,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PaicodingUserApplication" />
-        <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
         <item itemvalue="Spring Boot.PaicodingArticleApplication" />
+        <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
         <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingArticleApplication" />
       </list>
@@ -228,14 +220,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/feign/FeignConfig.java</url>
           <line>19</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/service/impl/UserRelationServiceImpl.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/UserRestController.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

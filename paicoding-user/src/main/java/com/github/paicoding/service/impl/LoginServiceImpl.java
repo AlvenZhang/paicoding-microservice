@@ -4,12 +4,12 @@ import com.github.paicoding.dao.UserAiDao;
 import com.github.paicoding.dao.UserDao;
 import com.github.paicoding.entity.UserAiDO;
 import com.github.paicoding.entity.UserDO;
-import com.github.paicoding.forum.api.model.context.ReqInfoContext;
 import com.github.paicoding.forum.api.model.exception.ExceptionUtil;
 import com.github.paicoding.forum.api.model.vo.constants.StatusEnum;
 import com.github.paicoding.forum.api.model.vo.user.UserPwdLoginReq;
 import com.github.paicoding.forum.api.model.vo.user.UserSaveReq;
 
+import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.service.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

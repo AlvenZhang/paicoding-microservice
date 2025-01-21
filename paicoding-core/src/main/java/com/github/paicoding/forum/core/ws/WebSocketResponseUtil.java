@@ -1,6 +1,6 @@
 package com.github.paicoding.forum.core.ws;
 
-import com.github.paicoding.forum.api.model.context.ReqInfoContext;
+import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.mdc.MdcUtil;
 import com.github.paicoding.forum.core.util.SpringUtil;
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;

@@ -3,7 +3,6 @@ package com.github.paicoding.service.impl;
 import com.github.paicoding.converter.UserConverter;
 import com.github.paicoding.dao.UserRelationDao;
 import com.github.paicoding.entity.UserRelationDO;
-import com.github.paicoding.forum.api.model.context.ReqInfoContext;
 import com.github.paicoding.forum.api.model.enums.FollowStateEnum;
 import com.github.paicoding.forum.api.model.enums.NotifyTypeEnum;
 import com.github.paicoding.forum.api.model.vo.PageListVo;
@@ -11,6 +10,7 @@ import com.github.paicoding.forum.api.model.vo.PageParam;
 import com.github.paicoding.forum.api.model.vo.notify.NotifyMsgEvent;
 import com.github.paicoding.forum.api.model.vo.user.UserRelationReq;
 import com.github.paicoding.forum.api.model.vo.user.dto.FollowUserInfoDTO;
+import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.util.MapUtils;
 import com.github.paicoding.forum.core.util.SpringUtil;
 

@@ -5,13 +5,13 @@ import com.github.paicoding.dao.UserAiDao;
 import com.github.paicoding.dao.UserAiHistoryDao;
 import com.github.paicoding.entity.UserAiDO;
 import com.github.paicoding.entity.UserAiHistoryDO;
-import com.github.paicoding.forum.api.model.context.ReqInfoContext;
 import com.github.paicoding.forum.api.model.enums.ai.AISourceEnum;
 import com.github.paicoding.forum.api.model.enums.user.UserAIStatEnum;
 import com.github.paicoding.forum.api.model.enums.user.UserAiStrategyEnum;
 import com.github.paicoding.forum.api.model.vo.chat.ChatItemVo;
 import com.github.paicoding.forum.api.model.vo.user.UserPwdLoginReq;
 
+import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.service.AiConfig;
 import com.github.paicoding.service.UserAiService;
 import org.apache.commons.lang3.StringUtils;
