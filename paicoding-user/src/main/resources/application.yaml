@@ -1,6 +1,8 @@
 server:
   port: 8200
 
+appkey: com.xifeng.paicoding.user
+
 env:
   name: dev
 

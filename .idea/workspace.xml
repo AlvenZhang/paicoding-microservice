@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="" />
+    <list default="true" id="8dd7d0fa-23d6-4a90-bfba-4db15de96138" name="Changes" comment="添加用户上下文拦截器">
+      <change afterPath="$PROJECT_DIR$/paicoding-article/src/main/java/com/github/paicoding/controller/TempController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/feign/FeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/client/ArticleClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/FirstRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/FirstRequestController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,18 +66,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "xifeng",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "D:/ideafile/paicoding-microservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.35287356",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "5de9c4a9b68fc791bc32b6a79b18e32e",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "c73ebd656ee0941c6f6d84ed36f71f0b",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -92,7 +108,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaicodingGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.PaicodingUserApplication">
     <configuration name="PaicodingArticleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="paicoding-article" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.paicoding.PaicodingArticleApplication" />
@@ -147,9 +163,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaicodingUserApplication" />
         <item itemvalue="Spring Boot.PaicodingGatewayApplication" />
         <item itemvalue="Spring Boot.PaicodingArticleApplication" />
         <item itemvalue="Spring Boot.PaicodingUserApplication" />
+        <item itemvalue="Spring Boot.PaicodingArticleApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -166,29 +184,58 @@
       <workItem from="1735971739243" duration="10968000" />
       <workItem from="1736647252407" duration="5507000" />
       <workItem from="1736652775989" duration="28359000" />
+      <workItem from="1737377983696" duration="6687000" />
     </task>
+    <task id="LOCAL-00001" summary="拆除paicoding-core中关于自动加载配置相关的信息。全部模块可以正常运行">
+      <option name="closed" value="true" />
+      <created>1737332882356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737332882356</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加用户上下文拦截器">
+      <option name="closed" value="true" />
+      <created>1737384274578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737384274578</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <MESSAGE value="添加用户上下文拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加用户上下文拦截器" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/UserRestController.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/interceptor/ReqContextInterceptor.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-user/src/main/java/com/github/paicoding/controller/UserRestController.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/paicoding-gateway/src/main/java/com/github/paicoding/filter/ReqContextGlobalFilter.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/paicoding-core/src/main/java/com/github/paicoding/forum/core/feign/FeignConfig.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
