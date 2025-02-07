@@ -4,7 +4,6 @@ import com.github.paicoding.entity.UserAiDO;
 import com.github.paicoding.entity.UserDO;
 import com.github.paicoding.entity.UserInfoDO;
 import com.github.paicoding.entity.UserRelationDO;
-import com.github.paicoding.forum.api.model.context.ReqInfoContext;
 import com.github.paicoding.forum.api.model.enums.FollowStateEnum;
 import com.github.paicoding.forum.api.model.enums.RoleEnum;
 import com.github.paicoding.forum.api.model.enums.user.UserAIStatEnum;
@@ -14,6 +13,7 @@ import com.github.paicoding.forum.api.model.vo.user.UserSaveReq;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.SimpleUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserStatisticInfoDTO;
+import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.util.JsonUtil;
 
 import org.springframework.beans.BeanUtils;

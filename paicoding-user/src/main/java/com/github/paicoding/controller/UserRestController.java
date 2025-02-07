@@ -18,6 +18,7 @@ import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.enums.FollowTypeEnum;
 import com.github.paicoding.forum.core.permission.Permission;
 import com.github.paicoding.forum.core.permission.UserRole;
+import com.github.paicoding.model.UserRelation;
 import com.github.paicoding.service.impl.UserRelationServiceImpl;
 import com.github.paicoding.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,7 +62,7 @@ public class UserRestController {
     @Permission(role = UserRole.LOGIN)
     @PostMapping(path = "saveUserRelation")
     public ResVo<Boolean> saveUserRelation(@RequestBody UserRelationReq req) {
-        userRelationService.saveUserRelation(req);
+        userRelationService.saveUserRelation(new UserRelation(req.getUserId(),req.getFollowUserId(),req.getFollowed()?1:2));
         return ResVo.ok(true);
     }
 
@@ -103,7 +104,7 @@ public class UserRestController {
 
         if (pageSize == null) pageSize = PageParam.DEFAULT_PAGE_SIZE;
         PageParam pageParam = PageParam.newPageInstance(page, pageSize);
-        PageListVo<ArticleDTO> dto = articleClient.queryArticlesByUserAndType(userId, pageParam, select.getCode());
+        PageListVo<ArticleDTO> dto = articleClient.queryArticlesByUserAndType(userId, pageParam, select);
         String html = templateEngineHelper.renderToVo("views/user/articles/index", "homeSelectList", dto);
         return ResVo.ok(new NextPageHtmlVo(html, dto.getHasMore()));
     }
