@@ -4,6 +4,7 @@ import com.github.paicoding.forum.api.model.vo.PageListVo;
 import com.github.paicoding.forum.api.model.vo.PageParam;
 import com.github.paicoding.forum.api.model.vo.user.UserRelationReq;
 import com.github.paicoding.forum.api.model.vo.user.dto.FollowUserInfoDTO;
+import com.github.paicoding.model.UserRelation;
 
 import java.util.List;
 import java.util.Set;
@@ -58,5 +59,5 @@ public interface UserRelationService {
      * @param req
      * @throws Exception
      */
-    void saveUserRelation(UserRelationReq req);
+    void saveUserRelation(UserRelation userRelation);
 }

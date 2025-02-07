@@ -14,6 +14,7 @@ import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.util.MapUtils;
 import com.github.paicoding.forum.core.util.SpringUtil;
 
+import com.github.paicoding.model.UserRelation;
 import com.github.paicoding.service.UserRelationService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -105,21 +106,12 @@ public class UserRelationServiceImpl implements UserRelationService {
     }
 
     @Override
-    public void saveUserRelation(UserRelationReq req) {
+    public void saveUserRelation(UserRelation userRelation) {
         // 查询是否存在
-        UserRelationDO userRelationDO = userRelationDao.getUserRelationRecord(req.getUserId(), ReqInfoContext.getReqInfo().getUserId());
-        if (userRelationDO == null) {
-            userRelationDO = UserConverter.toDO(req);
-            userRelationDao.save(userRelationDO);
-            // 发布关注事件
-            SpringUtil.publishEvent(new NotifyMsgEvent<>(this, NotifyTypeEnum.FOLLOW, userRelationDO));
+        if (!userRelation.hasRelation()) {
+            userRelation.follow();
             return;
         }
-
-        // 将是否关注状态重置
-        userRelationDO.setFollowState(req.getFollowed() ? FollowStateEnum.FOLLOW.getCode() : FollowStateEnum.CANCEL_FOLLOW.getCode());
-        userRelationDao.updateById(userRelationDO);
-        // 发布关注、取消关注事件
-        SpringUtil.publishEvent(new NotifyMsgEvent<>(this, req.getFollowed() ? NotifyTypeEnum.FOLLOW : NotifyTypeEnum.CANCEL_FOLLOW, userRelationDO));
+        userRelation.reset();
     }
 }
