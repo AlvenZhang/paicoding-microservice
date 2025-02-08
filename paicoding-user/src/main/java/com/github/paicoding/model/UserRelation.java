@@ -42,6 +42,7 @@ public class UserRelation {
         this.userId = userId;
         this.followUserId = followUserId;
         this.followState = followState;
+        this.isValid();
     }
 
     @Resource
@@ -66,7 +67,13 @@ public class UserRelation {
         // 将是否关注状态重置
         userRelationRepository.reset(UserConverter.toDTO(this));
         // 发布关注、取消关注事件
-        SpringUtil.publishEvent(new NotifyMsgEvent<>(this, this.getFollowState()==1 ? NotifyTypeEnum.FOLLOW : NotifyTypeEnum.CANCEL_FOLLOW, userRelationDO));
+        SpringUtil.publishEvent(new NotifyMsgEvent<>(this, this.getFollowState()==1 ? NotifyTypeEnum.FOLLOW : NotifyTypeEnum.CANCEL_FOLLOW, this));
+    }
+
+    public void isValid(){
+        if (!this.userId.equals(ReqInfoContext.getReqInfo().getUserId())){
+            throw new RuntimeException("不能修改其他用户的关系");
+        }
     }
 
 }

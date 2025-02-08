@@ -81,6 +81,7 @@ public class UserRestController {
             // 不能修改其他用户的信息
             return ResVo.fail(StatusEnum.FORBID_ERROR_MIXED, "无权修改");
         }
+
         userService.saveUserInfo(req);
         return ResVo.ok(true);
     }
