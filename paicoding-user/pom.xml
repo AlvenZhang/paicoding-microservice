@@ -8,8 +8,17 @@
     </parent>
     <groupId>com.github.paicoding</groupId>
     <artifactId>paicoding-user</artifactId>
+    <packaging>pom</packaging>
     <name>paicoding-user</name>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>paicoding-user-domain</module>
+        <module>paicoding-user-infrastructure</module>
+        <module>paicoding-user-trigger</module>
+        <module>paicoding-user-types</module>
+        <module>paicoding-user-api</module>
+        <module>paicoding-user-app</module>
+    </modules>
 
     <dependencies>
 

@@ -1,10 +1,9 @@
-package com.github.paicoding.controller;
+package com.github.paicoding.http;
 
 
-import com.github.paicoding.client.OriginClient;
+
 import com.github.paicoding.forum.core.enums.HomeSelectEnum;
 
-import com.github.paicoding.component.TemplateEngineHelper;
 import com.github.paicoding.forum.api.model.vo.NextPageHtmlVo;
 import com.github.paicoding.forum.api.model.vo.PageListVo;
 import com.github.paicoding.forum.api.model.vo.PageParam;
@@ -18,9 +17,8 @@ import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.enums.FollowTypeEnum;
 import com.github.paicoding.forum.core.permission.Permission;
 import com.github.paicoding.forum.core.permission.UserRole;
-import com.github.paicoding.model.UserRelation;
-import com.github.paicoding.service.impl.UserRelationServiceImpl;
-import com.github.paicoding.service.impl.UserServiceImpl;
+
+import com.github.paicoding.userrelation.model.UserRelation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -47,10 +45,8 @@ public class UserRestController {
     @Resource
     private TemplateEngineHelper templateEngineHelper;
 
-
     @Autowired
     private OriginClient articleClient;
-
 
     /**
      * 保存用户关系

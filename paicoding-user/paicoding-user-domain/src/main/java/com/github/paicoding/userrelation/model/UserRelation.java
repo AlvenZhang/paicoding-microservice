@@ -1,20 +1,18 @@
-package com.github.paicoding.model;
+package com.github.paicoding.userrelation.model;
 
 
-import com.github.paicoding.converter.UserConverter;
-import com.github.paicoding.dao.UserRelationDao;
-import com.github.paicoding.entity.UserRelationDO;
-import com.github.paicoding.forum.api.model.enums.FollowStateEnum;
+
 import com.github.paicoding.forum.api.model.enums.NotifyTypeEnum;
 import com.github.paicoding.forum.api.model.vo.notify.NotifyMsgEvent;
 import com.github.paicoding.forum.api.model.vo.user.UserRelationReq;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserRelationDTO;
 import com.github.paicoding.forum.core.context.ReqInfoContext;
 import com.github.paicoding.forum.core.util.SpringUtil;
-import com.github.paicoding.repository.UserRelationRepository;
-import lombok.AllArgsConstructor;
+
+import com.github.paicoding.userrelation.model.converter.UserConverter;
+import com.github.paicoding.userrelation.repository.UserRelationRepository;
 import lombok.Data;
-import org.checkerframework.checker.index.qual.PolyUpperBound;
+
 
 import javax.annotation.Resource;
 
